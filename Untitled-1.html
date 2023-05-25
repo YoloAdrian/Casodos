@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de satisfaccion</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="formulario" method="post" autocomplete="off" class="formulario">
+        <h1>Encuesta de satisfaccion a los usuarios</h1>
+        <p>En este espacio podran agregar sus evaluciones y comentarios acerca del evento</p>
+    <h3>Agrega tu nombre completo</h3>
+    <input  type="text" class="datos" name="Nombre" placeholder="Ingrese su nombre" autocomplete="off">
+    <h3>Agregue su correo electronico</h3>
+    <input  type="email" class="datos" name="Correo" placeholder="Agregue su correo" autocomplete="off"> 
+    <p>Agregue su edad
+    <input  type="number" class="edad" name="edad" min="15"  max="70" placeholder="edad"></p>
+    <h3>Agregue su numero de telefono</h3>
+    <input type="text" class="datos" name="Telefono" placeholder=" Numero de telefono">
+    <p>
+        ¿Asistirias a una nueva conferencia?
+        <input class="Verificacion" type="checkbox" name="Asistencia" value="Si"> Si
+        <input class="Verificacion" type="checkbox" name="Asistencia" value="No"> No 
+    </p>
+    <p>
+        ¿Le parecieron interesantes los temas tocados en la conferencia?
+        <input class="Verificacion" type="checkbox" name="temas" value="Si"> Si
+        <input class="Verificacion" type="checkbox" name="temas" value="No"> No 
+    </p>
+    <h3>
+        ¿Sobre que temas le interesaria hablar en la proxima conferencia?
+        <input type="text" list="Nuevos temas" class="datos" placeholder="Temas de interes">
+        <datalist class="datos">
+            <option value="Propuesta"></option>
+        </datalist>
+    </h3>
+    <p>
+        ¿Le agradaria que se impartieran cursos?
+        <input  class="Verificacion" type="checkbox" name="temas" value="Si"> Si
+        <input class="Verificacion" type="checkbox" name="temas" value="No"> No 
+    </p>
+    <p>
+        Elije la opcion segun tu preferencia
+    <select name="Opciones" class="Opciones">
+        <option value="1">excelente</option>
+        <option value="2">Bueno</option>
+        <option value="3">Regular</option>
+        <option value="4">Malo</option>
+    </select>
+    </p>
+    <p> Nos encantaria leer sus comentarios para continuar creciendo
+    <textarea name="comentarios" id="" cols="100" rows="10" placeholder="Agregue sus comentarios"></textarea>
+    </p>
+    <div class="Estilo">
+    <input class="Boton" type="submit" value="Enviar formulario">
+    <input class="Boton" type="reset" value="Borrar formulario">
+    </div>
+</form>
+</body>
+</html>
